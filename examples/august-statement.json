@@ -1,0 +1,22 @@
+{
+  "account_id": "acct_ledger_7",
+  "period": {"start": "2026-08-01", "end": "2026-08-31"},
+  "payments": [
+    {
+      "id": "pay_1042",
+      "posted_at": "2026-08-08T12:30:00Z",
+      "kind": "card_settlement",
+      "amount_minor": 1299,
+      "currency": "USD",
+      "risk": "low"
+    },
+    {
+      "id": "pay_1088",
+      "posted_at": "2026-08-21T09:15:00Z",
+      "kind": "refund",
+      "amount_minor": -450,
+      "currency": "USD",
+      "risk": "low"
+    }
+  ]
+}

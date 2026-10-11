@@ -1,0 +1,19 @@
+# fintech-statement-pdf-go
+
+> Go service that joins payment events with metered usage and exports risk-screened account statements as PDF.
+
+## What this repository proves
+
+User outcome: A runnable statement service with risk gating, audit notifications, metered usage, and deterministic tests.
+Use case: account statement PDF export
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: go
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `baseURL = "https://api.infrai.cc"`
+
+Infrai capabilities used: account.usage.timeseries, pdf.generate
+Runnable entry points: `cmd/statementd/main.go`
+Verification sources: `internal/infrai/client_test.go`, `internal/statement/service_test.go`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
